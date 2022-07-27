@@ -6,12 +6,12 @@ from pygame import mixer
 
 # PyGame Mixer
 mixer.init()
-mixstate = 0  # music play state
+mix_state = 0  # music play state
 
 # Tick timer values
 stime = 0.0
 is_paused = False
-time_elapsed = 0
+time_elapsed = 0.0
 
 # Text saved in clipboard (Auto-saves Ctrl-C on computer)
 clip_text = pc.paste()
@@ -24,21 +24,32 @@ engine = psx3.init()
 root = Tk()
 
 
+def tick():
+    global stime, time_elapsed
+    if not mixer.music.get_busy():
+        stime = None
+    elapsed = time.time()-stime if stime else 0
+    mins, secs = divmod(elapsed, 60)
+    tick_label.config(text=f"{mins:02.0f}:{secs:06.3f}")
+    tick_label.after(100, tick)
+
+
 def play_music():
-    global mixstate, stime, is_paused
-    if mixstate == 0:  # music not started
+    global mix_state, stime, is_paused, time_elapsed
+    if mix_state == 0:  # music not started
         outfile = "temp.wav"
         engine.save_to_file(text.get('1.0', END), outfile)
         engine.runAndWait()
         mixer.music.load(outfile)
         mixer.music.play()
         stime = time.time()
+        time_elapsed = stime
         ppu_button.configure(text="Pause", bg='red')
         is_paused = False
-        mixstate = 1
+        mix_state = 1
         return
 
-    if mixstate == 1:  # music playing
+    if mix_state == 1:  # music playing
         mixer.music.pause()
         stime = time.time()
         is_paused = True
@@ -48,13 +59,13 @@ def play_music():
         stime = time.time()
         is_paused = False
         ppu_button.configure(text="Pause", bg='red')
-    mixstate = 3 - mixstate  # swap pause state
+    mix_state = 3 - mix_state  # swap pause state
 
 
 def stop():
-    global mixstate, stime, is_paused
+    global mix_state, stime, is_paused
     mixer.music.stop()
-    mixstate = 0
+    mix_state = 0
     is_paused = True
 
 
@@ -77,6 +88,7 @@ text.pack()
 
 text.insert(END, text_string)
 
+# Tkinter buttons
 ppu_button = Button(root, text='Play', width=16, bg='green', fg='black', command=play_music)
 ppu_button.pack(side=TOP)
 
@@ -86,22 +98,12 @@ tick_label.pack()
 backwards_button = Button(root, text="<-", command=backwards)
 backwards_button.pack()
 
-unpause_button = Button(root, text="Unpause", command=unpause)
-unpause_button.pack(pady=20)
-
 stop_button = Button(root, text="Stop", command=stop)
 stop_button.pack()
 
 
-def tick():
-    global stime, time_elapsed
-    if not mixer.music.get_busy():
-        stime = None
-    elapsed = time.time()-stime if stime else 0
-    mins, secs = divmod(elapsed, 60)
-    tick_label.config(text=f"{mins:02.0f}:{secs:06.3f}")
-    tick_label.after(100, tick)
-
+# Binds space to Play/Pause/Resume button
+root.bind('<space>', lambda event: play_music())
 
 tick()
 
