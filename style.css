@@ -94,7 +94,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    
    .hero {
      height: 100vh;
-     background-image: url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
+     background-image: url("./img/634425deb807f711895576f7_mf-websitebg.png");
      background-position: 50% 4%;
      background-size: cover;
      background-repeat: no-repeat;
@@ -132,8 +132,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
    
    .subpage-background {
-     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
-     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
+     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("./img/634425deb807f711895576f7_mf-websitebg.png");
+     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/634425deb807f711895576f7_mf-websitebg.png");
      background-position: 0px 0px, 0px 0px;
      background-size: auto, auto;
      font-weight: 300;
@@ -569,7 +569,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      }
    
      .hero {
-       background-image: url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
+       background-image: url("./img/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
      }
    
      .hero-subtitle {
@@ -613,7 +613,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    
    @media screen and (max-width: 767px) {
      .hero {
-       background-image: url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
+       background-image: url("./img/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
      }
    
      .hero-heading {
@@ -674,7 +674,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    
    @media screen and (max-width: 479px) {
      .hero {
-       background-image: url("https://uploads-ssl.webflow.com/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
+       background-image: url("./img/63440f83c05a99ff34dad1d3/634425deb807f711895576f7_mf-websitebg.png");
      }
    
      .hero-heading {
