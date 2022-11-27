@@ -1,0 +1,142 @@
+
+{
+  "basics": {
+    "name": "Magnus Fröbom",
+    "label": "Programmer",
+    "image": "",
+    "email": "frobom.magnus@gmail.com",
+    "phone": "0046 702 842997",
+    "url": "https://github.com/MagnusFrobom",
+    "summary": "A summary of John Doe…",
+    "location": {
+      "address": "C. Almohabenos",
+      "postalCode": "03189",
+      "city": "Orihuela Costa",
+      "countryCode": "ES",
+      "region": "Alicante"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "Magnusfrobom",
+      "url": "https://twitter.com/magnusfrobom"
+      
+      
+      "network": "LinkedID",
+      "username": "MagnusFrobom",
+      "url": "https://twitter.com/magnusfrobom"
+    }]
+  },
+  "work": [{
+    "name": "Schedevi",
+    "position": "",
+    "url": "https://Schedevi.se",
+    "startDate": "2019-02-03",
+    "endDate": "2022-09-01",
+    "summary": "",
+    "highlights": [
+      "What did i do?"
+    ]
+  }],
+  "education": [{
+    "institution": "Online Course",
+    "url": "https://www.udemy.com/user/zero-to-mastery-2/",
+    "area": "Software Development",
+    "studyType": "Online",
+    "startDate": "2022-06-01",
+    "endDate": "2022-Present",
+    "courses": [
+      "Complete Python Developer"
+      "Complete Web Developer"
+      "Complete Machine Learning and Data Science Bootcamp"
+      "Master the coding interview: Data Structures + Algorithms"
+      "Complete SQL and  Database Bootcampt"
+    ]
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2022-07-11",
+    "issuer": "Udemy",
+    "url": "https://www.udemy.com/certificate/UC-a8bf8e5a-51b0-4fc2-b981-08f4254e12c6/"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+      "React"
+      "Photoshop"
+      "Ilustrator"
+      "Python"
+      "Anaconda"
+      "Jupyter notebook"
+      "PyCharm"
+      "NodeJS"
+      "php"
+      "pep8"
+      "VsCode"
+      "API"
+      "Webflow"
+      "Django"
+      "Flask"
+      "GUI"
+      "github"
+      "version control"
+      "Linux"
+      "AWS"
+      "Apache"
+      "MongoDB"
+      "MySQL"
+      "SQllite"
+      "Bash"
+    ]
+  }],
+  "languages": [{
+    "language": "Swedish",
+    "fluency": "Native Speaker"
+    
+    "language": "English",
+    "fluency": "Fluent"
+    
+    "language": "Spanish",
+    "fluency": "Basic"
+  }],
+  "interests": [{
+    "name": "Photography",
+    "keywords": [
+      "DSLR",
+      ""
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "ClipboardTextToSpeech",
+    "description": "Personal project that reads the text that i put in the clipboard",
+    "highlights": [
+      "I prefer to listen to text at high speed"
+    ],
+    "keywords": [
+      "Python"
+      "Gui"
+    ],
+    "startDate": "2022-07-20",
+    "endDate": "Present",
+    "url": "https://ClipBoardTextToSpeech.github.io/",
+    "roles": [
+      "Solo Developer"
+    ],
+    "entity": "Entity",
+    "type": "Python GUI"
+  }]
+}
