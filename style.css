@@ -2868,7 +2868,7 @@ p {
   }
 
   .hero {
-    background-image: url("./img/634425deb807f711895576f7_mf-websitebg.png");
+    background-image: url("./img/mf-websitebg.png");
   }
 
   .hero-subtitle {
@@ -2912,7 +2912,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url("./img/634425deb807f711895576f7_mf-websitebg.png");
+    background-image: url("./img/mf-websitebg.png");
   }
 
   .hero-heading {
@@ -2973,7 +2973,7 @@ p {
 
 @media screen and (max-width: 479px) {
   .hero {
-    background-image: url("./img/634425deb807f711895576f7_mf-websitebg.png");
+    background-image: url("./img/mf-websitebg.png");
   }
 
   .hero-heading {
