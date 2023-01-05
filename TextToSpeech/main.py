@@ -5,7 +5,8 @@ import tkinter as tk
 import time
 
 
-class TextToSpeechPlayer:
+class VoiceWeaver:
+    
     def __init__(self):
         # Initialize the audio mixer
         pygame.mixer.init()
@@ -89,7 +90,7 @@ class TextToSpeechPlayer:
 
 
 def main():
-    player = TextToSpeechPlayer()
+    player = VoiceWeaver()
     tk.mainloop()
 
 
