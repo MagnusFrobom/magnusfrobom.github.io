@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
 import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -16,18 +15,31 @@ const app = new Clarifai.App({
   apiKey: 'PasteAPIKey'
 });
 
-// No Longer need this. Updated to particles-bg
-// const particlesOptions = {
-//   particles: {
-//     number: {
-//       value: 30,
-//       density: {
-//         enable: true,
-//         value_area: 800
-//       }
-//     }
-//   }
-// }
+let config = {
+  num: [0.2, 0.2],
+  rps: 0.0001,
+  radius: [40, 40],
+  life: [0.1, 1],
+  v: [0.5, 1],
+  tha: [-40, 40],
+  // body: "./img/icon.png", // Whether to render pictures
+  // rotate: [0, 20],
+  alpha: [0.2, 0.2],
+  scale: [0.1, 0.2],
+  position: { x: 1, y: 1, width: 2000, height: 800 }, // all or center or {x:1,y:1,width:100,height:100}
+  color: ["#333333"],
+  cross: "dead", // cross or bround
+  random: 100,  // or null,
+  g: 0.01,    // gravity
+  // f: [2, -1], // force
+  onParticleUpdate: (ctx, particle) => {
+    ctx.beginPath();
+    ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
+    ctx.fillStyle = particle.color;
+    ctx.fill();
+    ctx.closePath();
+  }
+};
 
 class App extends Component {
   constructor() {
@@ -133,7 +145,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesBg type="fountain" bg={true} />
+        <ParticlesBg type="custom" num={100} config={config} bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
