@@ -2,12 +2,38 @@ const express = require('express');
 
 const app = express();
 
+const database = {
+    users: [
+        {
+            id: '123',
+            name: 'John',
+            email: 'john@gmail.com',
+            password: 'cookies',
+            entries: 0,
+            joined: new Date(),
+        },
+        {
+            id: '124',
+            name: 'Magnus',
+            email: 'frobom.magnus@gmail.com',
+            password: 'frobom',
+            entries: 0,
+            joined: new Date(),
+        },
+    ]
+}
+
 app.get('/', (req, res) => {
     res.send('Its working!');
 })
 
 app.post('/signin', (req, res) => {
-    res.send('signin')
+    if (req.body.email === database.users[0].email &&
+        req.body.password === database.users[0].password) {
+    res.json('Success');
+    } else {
+        res.status(400).json('error loging in');
+    }
 })
 
 
