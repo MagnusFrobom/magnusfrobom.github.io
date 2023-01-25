@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Tahoma", Courier, monospace;
-  background: rgb(218, 227, 227);
+  background: rgb(223, 223, 223);
+  background: linear-gradient(270deg, rgba(223, 223, 223, 1) 0%, rgba(103, 103, 103, 1) 72%, rgba(27, 45, 51, 1) 100%);
+  /*  background: rgb(218, 227, 227);
   background: linear-gradient(90deg, rgba(218, 227, 227, 1) 0%, rgba(100, 122, 122, 1) 50%, rgba(27, 45, 51, 1) 100%);/*linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%); /* w3c */
 }
 

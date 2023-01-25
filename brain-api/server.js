@@ -12,7 +12,7 @@ const db = knex({
   connection: {
     host : '127.0.0.1',
     user : 'magnus',
-    password : 'password',
+    password : '',
     database : 'brain'
   }
 });
@@ -47,7 +47,7 @@ app.post('/signin', (req, res) => {
     .catch(err => res.status(400).json('wrong credentials'))
 })
 
-app.post('/register', (rq, res) => { register.handleRegister(req, res, db, bcrypt )})
+app.post('./controllers/register.js', (req, res) => { register.handleRegister(req, res, db, bcrypt )})
 
 app.get('/profile/:id', (req, res) => {
   const { id } = req.params;
