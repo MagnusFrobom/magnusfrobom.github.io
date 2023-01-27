@@ -10,8 +10,8 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-  // Enter your own database information here based on what you created
-  client: 'pg',
+  // Enter your database information here
+  client: 'pg', // PostGres  
   connection: {
     host : '127.0.0.1',
     user : 'magnus',
@@ -32,8 +32,8 @@ app.use(express.json()); // latest version of exressJS now comes with Body-Parse
 // })
 
 app.get('/', (req, res) => { res.send(db.users) })
-app.post('./controllers/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)})
-app.post('./controllers/register.js', (req, res) => { register.handleRegister(req, res, db, bcrypt )})
+app.post('./controllers/signin', signin.handleSignin(db, bcrypt))
+app.post('./controllers/register.js', register.handleRegister(req, res, db, bcrypt ))
 app.get('/profile/:id', (req, res) => {profile.handleProfileGET(req, res, db, bcrypt)})
 app.put('/image', (req, res) => { image.handlImage(req ,res)})
 
