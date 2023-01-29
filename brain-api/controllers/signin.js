@@ -1,4 +1,4 @@
-const handelSignin = (db, bcrypt) => (req, res) => {
+const handelSignin = (req, res, db, bcrypt) => {
     db.select('email', 'hash').from('login')
         .where('email', '=', req.body.email)
         .then(data => {

@@ -3,7 +3,7 @@ const express = require('express');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-
+const Clarifai = require('clarifai');
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
@@ -31,11 +31,12 @@ app.use(express.json()); // latest version of exressJS now comes with Body-Parse
 //   res.send(database.users);
 // })
 
-app.get('/', (req, res) => { res.send(db.users) })
-app.post('./controllers/signin', signin.handleSignin(db, bcrypt))
-app.post('./controllers/register.js', register.handleRegister(req, res, db, bcrypt ))
+app.get('/', (req, res) => { res.send(db.users)})
+app.post('./controllers/signin', (req, res) => {signin.handleSignin(req, res, db, bcrypt)})
+app.post('./controllers/register.js', (req, res) => {register.handleRegister(req, res, db, bcrypt )})
 app.get('/profile/:id', (req, res) => {profile.handleProfileGET(req, res, db, bcrypt)})
-app.put('/image', (req, res) => { image.handlImage(req ,res)})
+app.put('/image', (req, res) => { image.handleImage(req ,res)})
+app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) })
 
 app.listen(3000, () => {
   console.log('app is running on port 3000');
