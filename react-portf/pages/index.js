@@ -90,7 +90,7 @@ export default function Home() {
                 My favorite Tech
               </h3>
               <p className="py-2">
-               Python, JavaScript, TypeScript, 
+               Python, JavaScript, TypeScript, NoSql, PostgreSQL, 
               </p>
               <h4 className="py-4 text-gray-900">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
