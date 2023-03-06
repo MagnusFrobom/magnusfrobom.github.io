@@ -7,7 +7,7 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/avatar.png";
-import code from "../public/code.png";
+import code from "../public/hr-python-badge.png";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web1.png";
@@ -53,7 +53,7 @@ export default function Home() {
               Magnus Fröbom
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Software Engineer.
+              Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Creative tech-enthusiast from Sweden working remote.
@@ -73,8 +73,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Personality</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Lifelong learner with a passion for technology, art, and personal
-                    development. Used and built computers since the age of four. 
-
+                    development.
                     <p className="self">Self-taught :
                     <span className="text-teal-500"> Software-Engineer, Photographer, Musician,
                     Producer, Flair-bartender.</span></p>
@@ -85,15 +84,15 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="bg-gradient-to-br from-green-100 via-cyan-400 to-cyan-800 text-left shadow-lg p-10 rounded-xl my-10 flex-1">
+            <div className="bg-gradient-to-br from-white via-teal-500 to-gray-900 text-left shadow-lg p-10 rounded-xl my-10 flex-1">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 My favorite Tech
               </h3>
               <p className="py-2">
-                .
+               Python, JavaScript, TypeScript, 
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              <h4 className="py-4 text-gray-900">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
@@ -106,11 +105,9 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio / Edu</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Listening is key for great teamwork.
-              <span className="text-teal-500"> agencies </span>
-              <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              <span className="text-teal-500"> Listening</span> is key for great 
+              <span className="text-teal-500"> teamwork </span>
+               and collaboration.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
