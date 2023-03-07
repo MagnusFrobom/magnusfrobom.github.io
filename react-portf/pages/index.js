@@ -97,9 +97,9 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
-                <div classname="icons-5xl flex space-x-4">
-                  <a href=""><Image src={tech} width={90} height={90} />  </a>
-                  <a href=""><Image src={tech2} width={90} height={90} />  </a>
+                <div classname="py-5 flex space-x-4">
+                  <a href="https://www.hackerrank.com/frobom_magnus"><Image src={tech} width={90} height={90} />  </a>
+                  <a href="https://github.com/MagnusFrobom"><Image src={tech2} width={90} height={90} />  </a>
                 </div>
             </div>
           </div>
