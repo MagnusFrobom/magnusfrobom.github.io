@@ -21,7 +21,8 @@ const Navbar = () => {
               }}
               >
                 <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-                <p>Magnus Fröbom<span> | SoftwareEngineer</span>
+                <p className="text-white text-[18px] font-normal cursor-pointer flex">Magnus Fröbom &nbsp;
+                <span>| SoftwareEngineer</span>
 
                 </p>
             </Link>
