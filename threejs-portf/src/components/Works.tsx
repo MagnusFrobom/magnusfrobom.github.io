@@ -29,10 +29,21 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               onClick={() => window.open(source_code_Link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-
+              <img 
+                src={github}
+                alt="github"
+                className="w-1/2 h-1/2
+                objec-contain"
+                />
             </div>
           </div>
         </div>
+
+        <div className="mt-5">
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </div>
+
       </Tilt>
     </motion.div>
   )
