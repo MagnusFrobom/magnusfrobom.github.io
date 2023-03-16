@@ -1,7 +1,6 @@
 import React from 'react'
-import { Html, useProgress } from '@React-three/drei';
+import { Html, useProgress } from '@react-three/drei';
 import { three } from 'maath';
-
 
 
 const Loader = () => {
