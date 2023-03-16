@@ -1,11 +1,18 @@
 import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
-
 import { styles } from '../style';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      test
+    </motion.div>
+  )
+}
 
 const Works = () => {
   return (
@@ -23,6 +30,16 @@ const Works = () => {
       >
         Text about my projects
       </motion.p>
+    </div>
+
+    <div className="mt-20 flex flex-wrap gap-7">
+      {projects.map((project, index) => (
+        <ProjectCard 
+          key={`project-${index}`}
+          index={index}
+          {...project}
+        />
+      ))}
     </div>
 
     </>
