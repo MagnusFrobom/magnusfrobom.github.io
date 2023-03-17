@@ -12,7 +12,19 @@ const Earth = () => {
 }
 
 const EarthCanvas = () => {
-  
+  return (
+    <Canvas
+      shadows
+      frameloop="demand"
+      gl={{ preseveDrawingBuffer: true }}
+      camera={{}}
+      >
+
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls />
+      </Suspense>
+    </Canvas>
+  )
 }
 
 export default Earth
