@@ -1,13 +1,12 @@
-import React from 'react'
 import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../style';
-import { services } from '../constants';
+import { services } from '../constants/index';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({index, title, icon}) => {
+const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
     <motion.div
@@ -39,13 +38,13 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}
+      <motion.p variants={fadeIn("icon", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
+      > Text goes here
       </motion.p>
       <div className='mt-20 flex fle-wrap gap-10'>
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...services} />
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
 
       </div>
