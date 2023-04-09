@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  postgre,
+  mysql,
+  githubB,
 } from "../assets";
 
 export const navLinks = [
@@ -112,6 +115,19 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "PostGre",
+    icon: postgre,
+  },  
+  {
+    name: "MySql",
+    icon: mysql,
+  },
+  {
+    name: "Github",
+    icon: githubB,
+  },
+
 ];
 
 const experiences = [
