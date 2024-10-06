@@ -552,6 +552,7 @@ h1 {
   }
 
   .navigation.version-white {
+    max-width: 100%;
     position: fixed;
   }
 
@@ -627,6 +628,10 @@ h1 {
     min-height: 60px;
   }
 
+  .navigation.version-white {
+    max-height: 100%;
+  }
+
   .brand {
     padding-left: 0;
   }
@@ -653,6 +658,10 @@ h1 {
 }
 
 @media screen and (max-width: 479px) {
+  .navigation.version-white {
+    max-height: 100%;
+  }
+
   .section.black {
     background-position: 21%;
   }
@@ -663,6 +672,14 @@ h1 {
 
   .heading-2 {
     font-size: 35px;
+  }
+
+  .grid.two {
+    flex-flow: column;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
   }
 
   .paragraph-3.tourtext {
@@ -676,6 +693,14 @@ h1 {
 
   .bookticketbutton {
     left: 25px;
+  }
+
+  .paragraph-4 {
+    font-size: 12px;
+  }
+
+  .heading-5 {
+    font-size: 25px;
   }
 }
 
