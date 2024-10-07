@@ -303,6 +303,7 @@ h1 {
 }
 
 .section.black.herop {
+  background-image: url('../images/DoubleMF.webp');
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
@@ -644,6 +645,12 @@ h1 {
     background-position: 35%;
   }
 
+  .section.black.herop {
+    background-image: url('../images/mf-1024.webp');
+    background-position: 50%;
+    background-size: cover;
+  }
+
   .heading {
     position: relative;
   }
@@ -683,7 +690,14 @@ h1 {
     max-width: 100%;
   }
 
-  .section.black.herop, .section.white.waypoint__white {
+  .section.black.herop {
+    background-image: url('../images/mf-1024.webp');
+    background-position: 50%;
+    background-size: cover;
+    max-width: 100%;
+  }
+
+  .section.white.waypoint__white {
     max-width: 100%;
   }
 
@@ -717,6 +731,12 @@ h1 {
 
   .section.black {
     background-position: 21%;
+  }
+
+  .section.black.herop {
+    background-image: url('../images/mf-1024.webp');
+    background-position: 50%;
+    background-size: cover;
   }
 
   .section.white.waypoint__white {
