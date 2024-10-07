@@ -748,6 +748,20 @@ h1 {
     display: flex;
   }
 
+  .quick-stack {
+    flex: 0 auto;
+  }
+
+  .cell {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tourhead {
+    width: 350px;
+  }
+
   .tourhead.support {
     color: #fff7f7;
     text-transform: none;
@@ -773,7 +787,11 @@ h1 {
   }
 
   .container-3 {
-    width: 300px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    display: flex;
   }
 
   .container-3.container2 {
