@@ -723,6 +723,14 @@ h1 {
     background-image: linear-gradient(90deg, #161616, #2a2a2a 11%, #000 35% 78%, #212121 92%, #161616);
   }
 
+  .section.white.waypoint__white.two.social {
+    max-height: 100%;
+  }
+
+  .section.white.waypoint__white.swiftnurturedesign {
+    background-image: linear-gradient(90deg, #161616, #000 35% 78%, #161616);
+  }
+
   .heading {
     font-size: 20px;
   }
@@ -740,6 +748,25 @@ h1 {
     display: flex;
   }
 
+  .tourhead.support {
+    color: #fff7f7;
+    text-transform: none;
+    text-shadow: -1px 1px 1px #0003;
+    word-break: normal;
+    overflow-wrap: normal;
+    mix-blend-mode: hard-light;
+    border: 1px #000;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 30px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    padding-top: 0;
+    display: flex;
+  }
+
   .paragraph-3.tourtext {
     padding-left: 0;
     font-size: 14px;
@@ -749,7 +776,20 @@ h1 {
     width: 300px;
   }
 
+  .container-3.container2 {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    display: flex;
+  }
+
   .bookticketbutton {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    position: static;
     left: 25px;
   }
 
@@ -759,6 +799,15 @@ h1 {
 
   .heading-5 {
     font-size: 25px;
+  }
+
+  .image-3, .image-4 {
+    width: 200px;
+  }
+
+  .image-5 {
+    width: 200px;
+    min-width: 200px;
   }
 }
 
